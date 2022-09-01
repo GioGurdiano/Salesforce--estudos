@@ -1,0 +1,44 @@
+<body>
+    <div>
+        <p>${Resource.msg('email.thank', 'email', null)}</p>
+        <br/>
+        <img src=${pdict.productImg0} alt="product image">
+    </div>
+    <p>
+        <strong> ${Resource.msg('email.name', 'email', null)}</strong>
+        <br/>
+        <span>${pdict.productName}</span>
+    </p>
+    <p>
+        <strong>${Resource.msg('email.description', 'email', null)}</strong>
+        <br/>
+        <span>${pdict.productDescription}</span>
+
+    </p>
+    <p>
+        <strong>${Resource.msg('email.order', 'email', null)}</strong>
+        <br/>
+        <span>${pdict.productId}</span>
+
+    </p>
+    <p>
+        <strong>${Resource.msg('email.date', 'email', null)}</strong>
+        <br/>
+        <span>${pdict.time}</span>
+    </p>
+    <p>
+       <strong>${Resource.msgf('email.qtd','email', null, pdict.productQuantityTotal)}</strong>
+    </p>
+    <p>
+        <strong>${Resource.msg('email.each', 'email', null)}</strong>
+        <br/>
+        <span>${ pdict.productCode, pdict.productPrice}</span>
+    </p>
+        <p>
+        <strong>${Resource.msg('email.subTotal', 'email', null)}</strong>
+        <br/>
+        <span>${ pdict.subTotal}</span>
+    </p>
+    <iscomment> <br/> </iscomment>
+    <iscomment> <isinclude template="checkout/confirmation/confirmationOrderTotal" /> </iscomment>
+</body>
