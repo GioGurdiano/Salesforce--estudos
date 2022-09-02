@@ -1,0 +1,7 @@
+<div class="row">
+    <isloop items="${pdict.products}" var="product">
+    <div class="col-3 col-sm-4">
+        <isinclude url="${URLUtils.url('Tile-Show', 'pid', product.productID, 'swatches', true, 'ratings', true)}" />
+    </div>
+    </isloop>
+</div>
