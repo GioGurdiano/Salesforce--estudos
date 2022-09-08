@@ -40,7 +40,7 @@ server.post('Submit', function (req, res, next){
             customObject.custom.name = name;
             customObject.custom.lastname = lastname;
             customObject.custom.coupon = currentCouponCode;
-
+            var couponCode = coupons[0].ID;
             var emailObj = {
                 to: email,
                 subject: "Confirmação de Newsletter",
@@ -50,6 +50,7 @@ server.post('Submit', function (req, res, next){
             var context = {
                 firstName: name,
                 lastName: lastname,
+                coupon: coupon.ID.toUpperCase()
             }
             if (currentCouponCode == null) {
 
