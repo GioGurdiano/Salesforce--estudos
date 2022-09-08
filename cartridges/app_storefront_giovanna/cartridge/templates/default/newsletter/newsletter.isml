@@ -1,23 +1,13 @@
-<form action="${pdict.actionUrl}" class="login" method="POST" name="login-form">
-    <div class="form-group required">
-        <label class="form-control-label" >
-            ${Resource.msg('label.input.full.name', 'newsletter', null)}
-        </label>
-        <input type="email" id="login-form-email" required aria-required="true" class="form-control required" aria-describedby="form-email-error" name="loginEmail" placeholder="Nome Completo">
-        <div class="invalid-feedback" id="form-email-error"></div>
-    </div>
-
-    <div class="form-group required">
-        <label class="form-control-label" for="login-form-email">
-            ${Resource.msg('label.input.login.email', 'login', null)}
-        </label>
-        <input type="email" id="login-form-email" required aria-required="true" class="form-control required" aria-describedby="form-email-error" name="loginEmail" placeholder="teste@teste.com">
-        <div class="invalid-feedback" id="form-email-error"></div>
-    </div>
-
-
-
-    <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}"/>
-
-    <button type="submit" class="btn btn-block btn-primary">${Resource.msg('button.text.loginform', 'login', null)}</button>
+<form action="${pdict.actionURL}" class="login" method="POST" name="newsletter-form">
+    <isdecorate template="common/layout/page">
+        <isscript>
+            var assets = require('*/cartridge/scripts/assets.js');
+            assets.addCss('/css/login.css');
+            assets.addJs('/js/login.js');
+        </isscript>
+        <div class="hero slant-down login-banner">
+            <h1 class="page-title">${Resource.msg('header.hero.image.newsletter', 'newsletter', null)}</h1>
+        </div>
+        <isinclude template="newsletter/newsletter-form" />
+    </isdecorate>
 </form>

@@ -1,0 +1,5 @@
+<body>
+    <h1>${Resource.msgf('message.hello', 'newsletter', null, pdict.firstName, pdict.lastName)}</h1>
+    </br>
+    <h2>Obrigado por se cadastrar no Newsletter</h2>
+</body>

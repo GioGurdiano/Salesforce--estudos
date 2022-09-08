@@ -1,0 +1,5 @@
+<body>
+    <h1>${Resource.msgf('message.hello', 'newsletter', null, pdict.firstName, pdict.lastName)}</h1>
+    </br>
+    <h2>Sentimos muito, mas o cupom não esta mais disponivel!</h2>
+</body>

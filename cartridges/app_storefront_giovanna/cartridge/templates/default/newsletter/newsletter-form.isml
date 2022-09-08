@@ -1,0 +1,34 @@
+<form action="${pdict.actionURL}" class="login" method="POST" name="login-form">
+    <div class="row justify-content-center">
+        <div class="col-sm-8 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group required">
+
+                        <label class="form-control-label">
+                            ${Resource.msg('label.input.first.name', 'newsletter', null)}
+                        </label>
+                        <input id="login-form-email" required aria-required="true" class="form-control required" aria-describedby="form-email-error" name="firstName" placeholder="Nome">
+                    </div>
+                    <div class="form-group required">
+                        <label class="form-control-label">
+                            ${Resource.msg('label.input.last.name', 'newsletter', null)}
+                        </label>
+                        <input id="login-form-email" required aria-required="true" class="form-control required" aria-describedby="form-email-error" name="lastName" placeholder="Sobrenome">
+
+                    </div>
+
+                    <div class="form-group required">
+                        <label class="form-control-label" for="login-form-email">
+                            ${Resource.msg('label.input.login.email', 'login', null)}
+                        </label>
+                        <input type="email" id="login-form-email" required aria-required="true" class="form-control required" aria-describedby="form-email-error" name="email" placeholder="exemplo@exemplo.com">
+
+                    </div>
+                    <button type="submit" class="btn btn-block btn-primary">${Resource.msg('button.text.loginform', 'login', null)}</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
