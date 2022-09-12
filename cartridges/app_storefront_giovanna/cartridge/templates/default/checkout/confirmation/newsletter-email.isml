@@ -1,6 +1,0 @@
-<body>
-    <h1>${Resource.msgf('message.hello', 'newsletter', null, pdict.firstName, pdict.lastName)}</h1>
-    </br>
-    <h2>${Resource.msg('message.avaliable.mail', 'newsletter', null)}</h2>
-    <h3>${pdict.coupon}</h3>
-</body>
