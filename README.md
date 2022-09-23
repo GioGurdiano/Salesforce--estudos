@@ -13,7 +13,6 @@
 ---------------
 
 1. Clone this repository to your local machine and follow instructions here to configure it properly: 
-https://learninghub.osf.digital/mod/page/view.php?id=1792
 3. Run `yarn install` to install all of the local dependancies
 4. Run `yarn run webpack:dev` to start watching for file changes and compile JS and SCSS files when that happens
 5. Run `yarn run lint` to run all the code linters or run:
